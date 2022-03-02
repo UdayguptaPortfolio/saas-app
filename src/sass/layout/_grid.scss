@@ -1,0 +1,12 @@
+@for $i from 1 through $columns{
+    .col-#{$i}{
+        flex:0 0 (100%/12)*$i;
+        width: (100%/12)*$i;
+        max-width: (100%/12)*$i;
+    }
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
